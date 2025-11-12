@@ -14,6 +14,14 @@ import {
 	PulsingOrbIcon,
 	QuantumParticlesIcon,
 } from "./components/IconButtons";
+import {
+	AIBrainLottie,
+	AIChipLottie,
+	AIDataLottie,
+	AILoadingLottie,
+	AIRobotLottie,
+	AISparklesLottie,
+} from "./components/LottieButtons";
 
 function App() {
 	return (
@@ -44,7 +52,7 @@ function App() {
 			</section>
 
 			{/* Icon Buttons Section */}
-			<section className="w-full max-w-6xl">
+			<section className="w-full max-w-6xl mb-20">
 				<h2 className="text-3xl font-bold mb-8 text-center text-[#1cade4]">
 					AI Icon Buttons
 				</h2>
@@ -55,6 +63,21 @@ function App() {
 					<QuantumParticlesIcon />
 					<BrainChipIcon />
 					<OrbitalRingIcon />
+				</div>
+			</section>
+
+			{/* Lottie Animations Section */}
+			<section className="w-full max-w-6xl">
+				<h2 className="text-3xl font-bold mb-8 text-center text-[#1cade4]">
+					AI Lottie Animations
+				</h2>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<AIBrainLottie />
+					<AIRobotLottie />
+					<AIChipLottie />
+					<AILoadingLottie />
+					<AISparklesLottie />
+					<AIDataLottie />
 				</div>
 			</section>
 
