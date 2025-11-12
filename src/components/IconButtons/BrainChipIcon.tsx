@@ -4,59 +4,66 @@ export function BrainChipIcon() {
 			<h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
 				Brain Chip
 			</h3>
-			<button
-				type="button"
-				className="group relative w-20 h-20 rounded-xl bg-gradient-to-br from-[#1cade4]/30 to-[#0d8bb8]/30 border-2 border-[#1cade4]/50 hover:border-[#1cade4] flex items-center justify-center hover:scale-110 transition-all duration-300 overflow-hidden"
-			>
-				{/* Circuit board pattern */}
-				<div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity">
-					<div className="absolute top-2 left-2 right-2 h-0.5 bg-[#1cade4]" />
-					<div className="absolute bottom-2 left-2 right-2 h-0.5 bg-[#1cade4]" />
-					<div className="absolute top-2 left-2 bottom-2 w-0.5 bg-[#1cade4]" />
-					<div className="absolute top-2 right-2 bottom-2 w-0.5 bg-[#1cade4]" />
+			<div className="group relative w-24 h-24 flex items-center justify-center">
+				{/* Simple circular background */}
+				<div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#1cade4]/20 to-transparent border border-[#1cade4]/40 group-hover:border-[#1cade4] transition-all" />
 
-					{/* Corner circuits */}
-					<div className="absolute top-2 left-2 w-1 h-1 bg-[#1cade4] rounded-full" />
-					<div className="absolute top-2 right-2 w-1 h-1 bg-[#1cade4] rounded-full" />
-					<div className="absolute bottom-2 left-2 w-1 h-1 bg-[#1cade4] rounded-full" />
-					<div className="absolute bottom-2 right-2 w-1 h-1 bg-[#1cade4] rounded-full" />
-				</div>
+				{/* Clean chip icon */}
+				<svg viewBox="0 0 60 60" className="w-16 h-16 relative z-10">
+					<title>AI Brain Chip</title>
+					<defs>
+						<linearGradient id="chip-simple-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+							<stop offset="0%" stopColor="#4cc9f0" />
+							<stop offset="100%" stopColor="#1cade4" />
+						</linearGradient>
+					</defs>
 
-				{/* Animated scan line */}
-				<div className="absolute inset-0 overflow-hidden">
-					<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-b from-[#1cade4] to-transparent opacity-60 animate-pulse" />
-				</div>
+					{/* Main chip body */}
+					<rect
+						x="20"
+						y="20"
+						width="20"
+						height="20"
+						rx="2"
+						fill="url(#chip-simple-gradient)"
+						stroke="#ffffff"
+						strokeWidth="1.5"
+						opacity="0.9"
+					/>
 
-				{/* Brain/Chip hybrid icon */}
-				<div className="relative z-10 flex items-center justify-center">
-					<svg
-						className="w-10 h-10 text-[#1cade4] group-hover:text-[#4cc9f0] transition-colors"
+					{/* Simple brain pattern inside */}
+					<path
+						d="M 28 25 Q 30 23 32 25 M 28 30 Q 30 28 32 30 M 28 35 Q 30 33 32 35"
+						stroke="#ffffff"
+						strokeWidth="1"
 						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<title>AI Brain Chip</title>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={1.5}
-							d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-						/>
-					</svg>
+						opacity="0.7"
+					/>
 
-					{/* Glowing core */}
-					<div className="absolute inset-0 flex items-center justify-center">
-						<div className="w-6 h-6 bg-[#1cade4] opacity-20 rounded-full blur-md group-hover:opacity-40 transition-opacity" />
-					</div>
-				</div>
+					{/* Simple pins */}
+					<rect x="12" y="24" width="6" height="2" fill="#1cade4" opacity="0.7" />
+					<rect x="12" y="29" width="6" height="2" fill="#1cade4" opacity="0.7" />
+					<rect x="12" y="34" width="6" height="2" fill="#1cade4" opacity="0.7" />
 
-				{/* Corner decorations */}
-				<div className="absolute top-1 left-1 w-2 h-2 border-t-2 border-l-2 border-[#1cade4]/60" />
-				<div className="absolute top-1 right-1 w-2 h-2 border-t-2 border-r-2 border-[#1cade4]/60" />
-				<div className="absolute bottom-1 left-1 w-2 h-2 border-b-2 border-l-2 border-[#1cade4]/60" />
-				<div className="absolute bottom-1 right-1 w-2 h-2 border-b-2 border-r-2 border-[#1cade4]/60" />
-			</button>
-			<span className="text-xs text-gray-500">AI Processor</span>
+					<rect x="42" y="24" width="6" height="2" fill="#1cade4" opacity="0.7" />
+					<rect x="42" y="29" width="6" height="2" fill="#1cade4" opacity="0.7" />
+					<rect x="42" y="34" width="6" height="2" fill="#1cade4" opacity="0.7" />
+
+					<rect x="24" y="12" width="2" height="6" fill="#1cade4" opacity="0.7" />
+					<rect x="29" y="12" width="2" height="6" fill="#1cade4" opacity="0.7" />
+					<rect x="34" y="12" width="2" height="6" fill="#1cade4" opacity="0.7" />
+
+					<rect x="24" y="42" width="2" height="6" fill="#1cade4" opacity="0.7" />
+					<rect x="29" y="42" width="2" height="6" fill="#1cade4" opacity="0.7" />
+					<rect x="34" y="42" width="2" height="6" fill="#1cade4" opacity="0.7" />
+				</svg>
+
+				{/* Subtle hover glow */}
+				<div className="absolute inset-0 rounded-full bg-[#1cade4] opacity-0 group-hover:opacity-20 blur-2xl transition-opacity" />
+			</div>
+			<span className="text-xs text-gray-500 group-hover:text-[#1cade4] transition-colors">
+				AI Processor
+			</span>
 		</div>
 	);
 }
