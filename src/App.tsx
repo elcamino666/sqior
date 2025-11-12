@@ -15,12 +15,12 @@ import {
 	QuantumParticlesIcon,
 } from "./components/IconButtons";
 import {
-	AIBrainLottie,
-	AIChipLottie,
-	AIDataLottie,
-	AILoadingLottie,
+	AIClaude,
 	AIRobotLottie,
-	AISparklesLottie,
+	AIShield,
+	AISphereLottie,
+	AiTechLottie,
+	StarLottie,
 } from "./components/LottieButtons";
 
 function App() {
@@ -72,12 +72,12 @@ function App() {
 					AI Lottie Animations
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					<AIBrainLottie />
+					<AiTechLottie />
+					<StarLottie />
+					<AIShield />
+					<AISphereLottie />
 					<AIRobotLottie />
-					<AIChipLottie />
-					<AILoadingLottie />
-					<AISparklesLottie />
-					<AIDataLottie />
+					<AIClaude />
 				</div>
 			</section>
 

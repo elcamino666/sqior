@@ -1,6 +1,6 @@
-export { AIBrainLottie } from "./AIBrainLottie";
+export { AIClaude } from "./AIClaude.tsx";
 export { AIRobotLottie } from "./AIRobotLottie";
-export { AIChipLottie } from "./AIChipLottie";
-export { AILoadingLottie } from "./AILoadingLottie";
-export { AISparklesLottie } from "./AISparklesLottie";
-export { AIDataLottie } from "./AIDataLottie";
+export { AIShield } from "./AIShield.tsx";
+export { AISphereLottie } from "./AISphereLottie.tsx";
+export { AiTechLottie } from "./AiTechLottie.tsx";
+export { StarLottie } from "./StarLottie.tsx";
